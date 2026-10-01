@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #e7edf5;
+  background: #080d14;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --bg: #080d14;
+  --sidebar: #0b111a;
+  --panel: #0d141e;
+  --panel-raised: #101a27;
+  --line: #1d2a39;
+  --line-soft: #172330;
+  --text: #e7edf5;
+  --muted: #8492a4;
+  --quiet: #586879;
+  --blue: #64b5f6;
+  --cyan: #62d3df;
+  --green: #5dc79a;
+  --amber: #e6ad5b;
+  --red: #ef7777;
+  --mono: 'DM Mono', monospace;
+  font-optical-sizing: auto;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select { font: inherit; }
+button { color: inherit; }
+a { color: inherit; text-decoration: none; }
+::selection { color: #fff; background: #27627d; }
