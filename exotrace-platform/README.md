@@ -44,10 +44,15 @@ backend/app/
   repositories/     In-memory demo fixtures; replace with validated adapters
   schemas/          Pydantic request/response contracts
 src/
-  services/         Typed API client
-  types/            Frontend API types
-  App.tsx           Route shell and initial mission views
+  components/       Layout, navigation, charts, timeline, causal, shared UI
+  data/             Deterministic DEMO DATA fixtures
+  pages/            One module per mission and system route
+  services/         Typed FastAPI client
+  types/            Strict telemetry, anomaly, mission, investigation types
+  AppRoutes.tsx     Canonical route definitions and legacy redirects
 ```
+
+Frontend routes: `/mission`, `/telemetry`, `/anomalies`, `/timeline`, `/causal`, `/investigation`, `/data-sources`, `/models`, and `/settings`.
 
 ## API surface
 
@@ -70,4 +75,4 @@ The model registry is informational. Isolation Forest, autoencoders, temporal mo
 - `SAT-X01` and its displayed measurements are demonstration fixtures.
 - Hypothesis scores are illustrative UI values, not calibrated probabilities or confidence estimates.
 - No causal relationships or failure root cause are established.
-- The fourth overview metric is “Events Reviewed”; the source brief ended mid-metric at “CR”, so no intended metric is inferred.
+- Mission metrics and all chart values are simulated; no result should be interpreted as operational telemetry.
